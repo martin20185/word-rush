@@ -185,7 +185,8 @@ function updateScore(l) {
 	score += l * 50;
 }
 
-//menu that runs
+//menu that runs when the page first loads
+//just displays background and text with game title and simple instructions
 function menu() {
 	over = true;
 	ctx.fillStyle = "#bababa";
@@ -207,13 +208,16 @@ function menu() {
 	ctx.fillText("Click here to begin", width / 2, height / 2 + 50);
 }
 
+//function that displays the current score
 function drawScore() {
 	ctx.font = "18px Verdana";
 	ctx.fillStyle = "white";
 	ctx.fillText("Score: " +  score, 60, height - 20);
 }
 
+//function that shows game over screen, final score, and total words entered
 function gameOver() {
+	//ends game and loops 
 	over = true;
 	clearInterval(speedLoop);
 	clearInterval(gameLoop);
@@ -230,6 +234,7 @@ function gameOver() {
 	ctx.fillText("Click here to restart", width / 2, height / 2 + 30);
 }
 
+//function that runs all other functions in the right order so that the game continuosly updates
 function game() {
 	drawCity();
 	drawCraters();
@@ -239,9 +244,10 @@ function game() {
 	checkWordPositions();
 	drawLives();
 	drawScore();
-	if(lives <= 0) {
+	if(lives <= 0) { //check if the user is out of lives and end game if so
 		gameOver();
 	}
 }
 
+//display the menu when the page loads
 menu();
