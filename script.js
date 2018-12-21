@@ -151,12 +151,9 @@ function checkForWord() {
 	}
 }
 
-//function that generates a speed increase amount and increases speed of all words on the screen
+//function that generates an amount to increase speed of new words by
 function speedUp() {
 	speedIncrease = (totalWords / 70); //speed increase based on the number of words the user has entered (can do some tweaking)
-	for(var i = 0; i < speed.length; i++) { //for speeds of all words
-		speed[i] += speedIncrease; //increase speed by the amount
-	}
 }
 
 //checks for any keyboard input from user
@@ -206,7 +203,7 @@ function menu() {
 	ctx.fillText("below and press enter!", width / 2, height / 2 + 50);
 	ctx.font = "bold italic 20px Courier";
 	ctx.fillStyle = "white";
-	ctx.fillText("Click here to begin", width / 2, height / 2 + 70);
+	ctx.fillText("Click here to begin", width / 2, height / 2 + 80);
 }
 
 //function that displays the current score
