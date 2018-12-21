@@ -202,7 +202,8 @@ function menu() {
 	ctx.font = "bold 18px Verdana";
 	ctx.fillStyle = "black";
 	ctx.fillText("Use your typing skills to save the city!", width / 2, height / 2 - 10);
-	ctx.fillText("Type the word under the missile in the text box below and press enter!", width / 2, height / 2 + 20);
+	ctx.fillText("Type the word under the missile in the text box", width / 2, height / 2 + 20);
+	ctx.fillText("below and press enter!", width / 2, height / 2 + 50);
 	ctx.font = "bold italic 20px Courier";
 	ctx.fillStyle = "white";
 	ctx.fillText("Click here to begin", width / 2, height / 2 + 50);
