@@ -206,7 +206,7 @@ function menu() {
 	ctx.fillText("below and press enter!", width / 2, height / 2 + 50);
 	ctx.font = "bold italic 20px Courier";
 	ctx.fillStyle = "white";
-	ctx.fillText("Click here to begin", width / 2, height / 2 + 50);
+	ctx.fillText("Click here to begin", width / 2, height / 2 + 70);
 }
 
 //function that displays the current score
