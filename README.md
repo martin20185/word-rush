@@ -27,7 +27,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/martinivnv/word-rush">
-    <img src="bomb.png" alt="Logo" width="80" height="80">
+    <img src="bomb.png" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Word Rush</h3>
